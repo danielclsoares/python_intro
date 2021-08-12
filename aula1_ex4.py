@@ -1,5 +1,8 @@
 import math
 
-# O ângulo zenital vai ser o arctg(sombra/altura)
+# O ângulo zenital é aquele cuja tangente se dá pelo comprimento da sombra dividido pela altura do poste
+c = 0.5
+h = 5
 
-print (math.atan(0.5/5))
+# Em radianos, esse ângulo é:
+print((math.atan(c/h))

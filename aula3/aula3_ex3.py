@@ -1,18 +1,7 @@
-def mi_p_me(milhas):
-  metros = milhas*1609.34
-  print( metros , "metros")
+import math
 
-def me_p_mi(metros):
-  milhas = metros/1609.34
-  print (milhas , "milhas")
+def a_zen( h , c ):
+  a = math.atan(c/h)
+  print(a)
 
-def h_p_s(horas):
-  segundos = horas*3600
-  print(segundos , 'segundos')
-
-def s_p_h(segundos):
-  horas = segundos/3600
-  print(horas , 'horas')
-
-me_p_mi(10000)
-s_p_h(43.5*60)
+a_zen( 5 , .5 )

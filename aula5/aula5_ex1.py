@@ -8,7 +8,6 @@ jn.bgcolor(cor_fundo)
 joana = turtle.Turtle()
 
 joana.color("blue")
-
 joana.pensize(3)
 
 for i in [0, 1, 2, 3]:

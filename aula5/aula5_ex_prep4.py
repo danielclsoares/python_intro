@@ -18,7 +18,7 @@ def polygon(t,length, n):
 
 def circle( t , r ):
   
-  polygon( t , 6.283185 , r)
+  polygon( t , 2*math.pi , r)
 
 joana = turtle.Turtle()
 circle(joana, 75)

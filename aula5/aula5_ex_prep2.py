@@ -2,7 +2,7 @@ import turtle
 
 jn = turtle.Screen()
 
-cor_fundo = str(input("digite a cor do fundo:"))
+cor_fundo = "orange"
 jn.bgcolor(cor_fundo)
 
 def square(t,length):

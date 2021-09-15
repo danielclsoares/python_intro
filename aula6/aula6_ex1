@@ -5,7 +5,7 @@ def draw_bar(t, height, bin):
     t.left(90)
     t.forward(height)
     t.right(90)
-    t.forward(300/bin)
+    t.forward(350/bin)
     t.right(90)
     t.forward(height)
     t.left(90)

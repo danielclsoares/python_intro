@@ -1,0 +1,291 @@
+import turtle
+import math
+
+jn = turtle.Screen()
+
+cor_fundo = "red"
+jn.bgcolor(cor_fundo)
+
+joana = turtle.Turtle()
+
+joana.shape("turtle")
+joana.speed(9)
+
+def polygon_arc(t,length, n , angulo):
+
+  for i in range(n*angulo//360):
+  
+    t.forward(length)
+    t.left(360/n)
+
+def arc( t , r , angulo):
+
+  polygon_arc( t , 2 * math.pi , r , angulo)
+  
+def polygon_arc_dir(t,length, n , angulo):
+
+  for i in range(n*angulo//360):
+  
+    t.forward(length)
+    t.right(360/n)
+
+def arc_dir( t , r , angulo):
+
+  polygon_arc_dir( t , 2 * math.pi , r , angulo)
+
+def draw_a(t):
+  
+  t.left(75)
+  t.forward(75)
+  t.right(150)
+  t.forward(75)
+  t.left(180)
+  t.forward(25)
+  t.left(75)
+  t.forward(30)
+  
+def draw_b(t):
+  
+  t.forward(5)
+  arc(t, 10, 180)
+  t.forward(10)
+  t.left(180)
+  t.forward(5)
+  arc(joana, 12, 180)
+  t.forward(10)
+  t.left(90)
+  t.forward(40)
+  
+def draw_c(t):
+  
+  t.left(180)
+  arc(joana, 30,180)
+  
+def draw_d(t):
+  
+  t.forward(10)
+  arc(t, 30,180)
+  t.forward(10)
+  t.left(90)
+  t.forward(55)
+  
+def draw_e(t):
+  
+  t.left(180)
+  t.forward(50)
+  t.right(90)
+  t.forward(50)
+  t.right(90)
+  t.forward(35)
+  t.left(180)
+  t.forward(35)
+  t.right(90)
+  t.forward(50)
+  t.right(90)
+  t.forward(50)
+  
+def draw_f(t):
+  
+  t.left(90)
+  t.forward(50)
+  t.right(90)
+  t.forward(35)
+  t.left(180)
+  t.forward(35)
+  t.right(90)
+  t.forward(50)
+  t.right(90)
+  t.forward(50)
+  
+def draw_g(t):
+  
+  t.left(160)
+  arc(t, 50, 300)
+  t.left(90)
+  t.forward(15)
+  t.left(180)
+  t.forward(30)
+  
+def draw_h(t):
+  
+  t.left(90)
+  t.forward(100)
+  t.left(180)
+  t.forward(50)
+  t.right(90)
+  t.forward(50)
+  t.left(90)
+  t.forward(50)
+  t.left(180)
+  t.forward(100)
+  
+def draw_i(t):
+  
+  t.left(90)
+  t.forward(100)
+  t.penup()
+  t.forward(10)
+  t.pendown()
+  arc(t, 3,360)
+  t.penup()
+  t.forward(50)
+  
+def draw_j(t):
+  
+  t.right(90)
+  arc(t, 25, 187)
+  t.forward(50)
+  t.left(90)
+  t.forward(50)
+  t.left(180)
+  t.forward(100)
+
+def draw_k(t):
+  
+  t.left(90)
+  t.forward(40)
+  t.right(45)
+  t.forward(50)
+  t.left(180)
+  t.forward(50)
+  t.left(90)
+  t.forward(50)
+  t.left(180)
+  t.forward(50)
+  t.right(45)
+  t.forward(40)
+  
+def draw_l(t):
+  
+  t.left(180)
+  t.forward(35)
+  t.right(90)
+  t.forward(50)
+  
+def draw_m(t):
+  
+  t.left(75)
+  t.forward(75)
+  t.right(150)
+  t.forward(75)
+  t.left(150)
+  t.forward(75)
+  t.right(150)
+  t.forward(75)
+  
+def draw_n(t):
+  
+  t.left(90)
+  t.forward(50)
+  t.right(150)
+  t.forward(60)
+  t.left(150)
+  t.forward(50)
+  
+def draw_o(t):
+  
+  arc(t,40,360)
+  
+def draw_p(t):
+
+  t.forward(5)
+  arc(t, 10, 180)
+  t.forward(10)
+  t.left(90)
+  t.forward(50)
+  
+def draw_q(t):
+  
+  arc(t,40,400)
+  t.left(90)
+  t.forward(15)
+  t.left(180)
+  t.forward(30)
+  
+def draw_r(t):
+  
+  t.left(120)
+  t.forward(30)
+  t.right(120)
+  t.forward(5)
+  arc(t, 10, 180)
+  t.forward(10)
+  t.left(90)
+  t.forward(50)
+
+def draw_s(t):
+  
+  t.forward(10)
+  arc(t,30,180)
+  arc_dir(t,30,180)
+  t.forward(10)
+
+def draw_t(t):
+  
+  t.left(90)
+  t.forward(75)
+  t.left(90)
+  t.forward(25)
+  t.left(180)
+  t.forward(50)
+
+def draw_u(t):
+  
+  t.right(90)
+  t.forward(50)
+  arc(t,30,180)
+  t.forward(50)
+
+def draw_v(t):
+  
+  t.left(75)
+  t.right(150)
+  t.forward(75)
+  t.left(150)
+  t.forward(75)
+
+def draw_w(t):
+
+  t.left(75)
+  t.right(150)
+  t.forward(75)
+  t.left(150)
+  t.forward(75)
+  t.right(150)
+  t.forward(75)
+  t.left(150)
+  t.forward(75)
+
+def draw_x(t):
+
+  t.left(60)
+  t.forward(75)
+  t.left(120)
+  t.penup()
+  t.forward(45)
+  t.pendown()
+  t. left(120)
+  t.forward(75)
+
+def draw_y(t):
+
+  t.left(60)
+  t.forward(75)
+  t.left(120)
+  t.penup()
+  t.forward(45)
+  t.pendown()
+  t. left(120)
+  t.forward(45)
+  t.penup()
+  t.forward(50)
+
+def draw_z(t):
+  
+  t.forward(50)
+  t.right(135)
+  t.forward(65)
+  t.left(135)
+  t.forward(50)
+  
+jn.mainloop()

@@ -32,7 +32,7 @@ def flor(n):
 
     for i in range(2):
 
-      arc(joana,100,120)
+      arc(joana,75,120)
       joana.left(60)
 
     joana.left(int(360/n))

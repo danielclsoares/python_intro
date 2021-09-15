@@ -1,0 +1,58 @@
+import turtle
+import math
+
+jn = turtle.Screen()
+
+cor_fundo = "red"
+jn.bgcolor(cor_fundo)
+
+joana = turtle.Turtle()
+joana.right(90)
+
+joana.shape("turtle")
+joana.speed(9)
+
+def polygon_arc(t,length, n , angulo):
+
+  t.color("blue")
+  t.pensize(3)
+
+  for i in range(n*angulo//360):
+  
+    t.forward(length)
+    t.left(360/n)
+
+def arc( t , r , angulo):
+
+  polygon_arc( t , 2 * math.pi , r , angulo)
+  
+def petala(t):
+  t.forward(50)
+  t.left(30)
+  t.forward(50)
+  t.left(150)
+  t.forward(50)
+  t.left(30)
+  t.forward(50)
+  
+def flor(n):  
+
+  for j in range (n):
+
+    for i in range(2):
+
+      arc(joana,75,120)
+      joana.left(60)
+
+    joana.left(int(360/n))
+  joana.forward(150)
+  joana.left(90)
+  petala(joana)
+  joana.right(30)
+  petala(joana)
+  joana.right(120)
+  joana.forward(50)
+  
+flor(5)
+
+jn.mainloop()

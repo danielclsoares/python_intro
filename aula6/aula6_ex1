@@ -1,0 +1,31 @@
+import turtle
+
+def draw_bar(t, height, bin):
+    """ Get turtle t to draw one bar, of height. """
+    t.left(90)
+    t.forward(height)
+    t.right(90)
+    t.forward(300/bin)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+
+tess = turtle.Turtle() #instanciação
+jn = turtle.Screen()
+
+tess.color("blue")
+tess.fillcolor("red")
+tess.speed(90)
+jn.bgcolor("pink")
+tess.penup() #levantar a caneta
+tess.goto(-180,-150) #mudar posicao de inicio 
+tess.pendown() #abaixar a caneta
+
+xs = [48,117,160,260,220,250,311,275,245,210,180,120,80,20]
+
+tess.begin_fill()
+for a in xs:
+    draw_bar(tess, a, len(xs))
+
+
+tess.end_fill()

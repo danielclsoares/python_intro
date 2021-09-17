@@ -14,18 +14,21 @@ tess = turtle.Turtle() #instanciação
 jn = turtle.Screen()
 
 tess.color("blue")
-tess.fillcolor("red")
+tess.fillcolor(input("Digite a cor do histograma:"))
 tess.speed(90)
 jn.bgcolor("pink")
 tess.penup() #levantar a caneta
 tess.goto(-180,-150) #mudar posicao de inicio 
 tess.pendown() #abaixar a caneta
 
-xs = [48,117,160,260,220,250,311,275,245,210,180,120,80,20]
+str_list = input("insira a lista:")
+lista = list(str_list.split())
+int_list = []
 
 tess.begin_fill()
-for a in xs:
-    draw_bar(tess, a, len(xs))
 
+for i in lista:
+    int_list.append(int(i))
+    draw_bar(tess, i, len(lista))
 
 tess.end_fill()
